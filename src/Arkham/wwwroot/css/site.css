@@ -3,8 +3,6 @@
     padding-bottom: 20px;
 }
 
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
@@ -31,21 +29,18 @@
         .animate-repeat.ng-move,
         .animate-repeat.ng-enter {
             opacity: 0;
-            /*max-height:0;*/
         }
 
             .animate-repeat.ng-leave,
             .animate-repeat.ng-move.ng-move-active,
             .animate-repeat.ng-enter.ng-enter-active {
                 opacity: 1;
-                /*max-height:200px;*/
             }
 
     /**
  * Stagger Leave (hide) animation
  */
     .animate-repeat.ng-leave-stagger {
-        /* this will have a 100ms delay between each successive leave animation */
         -webkit-transition-delay: 0.0s;
         transition-delay: 0.0s;
         /* in case the stagger doesn't work then these two values
@@ -57,12 +52,11 @@
     /**
  * Stagger ENTER ANIMATION
  */
-    .animate-repeat.ng-enter-stagger {
-        /* this will have a 100ms delay between each successive enter animation */
-        -webkit-transition-delay: 0.05s;
-        transition-delay: 0.05s;
-        /* in case the stagger doesn't work then these two values
-     must be set to 0 to avoid an accidental CSS inheritance */
-        -webkit-transition-duration: 0s;
-        transition-duration: 0s;
-    }
+.animate-repeat.ng-enter-stagger {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+    /* in case the stagger doesn't work then these two values
+    must be set to 0 to avoid an accidental CSS inheritance */
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+}
