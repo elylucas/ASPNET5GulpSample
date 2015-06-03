@@ -1,0 +1,10 @@
+{
+  "AppSettings": {
+    "SiteTitle": "Arkham"
+  },
+  "Data": {
+    "DefaultConnection": {
+      "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-Arkham-56525f00-70ee-4e59-890c-c3c3b789ee82;Trusted_Connection=True;MultipleActiveResultSets=true"
+    }
+  }
+}

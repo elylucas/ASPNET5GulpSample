@@ -1,0 +1,14 @@
+﻿
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6 col-md-2 animate-repeat" ng-repeat="c in vm.characters | filter:search">
+            <a href="/#/characters/{{c.Id}}" class="thumbnail">
+                <img style="width:200px;height:200px" ng-src="/images/pics/{{c.Image}}" />
+                <div class="caption">
+                    <h4>{{c.Name}}</h4>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
