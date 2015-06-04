@@ -6,14 +6,14 @@
       .module('arkhamApp')
       .controller('characterDetailController', CharacterDetailController);
 
-    function CharacterDetailController($stateParams, characterService) {
+    function CharacterDetailController($stateParams, charactersService) {
         var vm = this;
 
         activate();
 
         function activate() {
 
-            characterService.getCharacter($stateParams.id).then(function (data) {
+            charactersService.getCharacter($stateParams.id).then(function (data) {
                 vm.character = data;
             });
 
