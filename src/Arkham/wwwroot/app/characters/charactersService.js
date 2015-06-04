@@ -4,7 +4,7 @@
 
     angular
       .module('arkhamApp')
-      .factory('charactersService', ['$http', '$q', CharactersService]);
+      .factory('charactersService', CharactersService);
 
     function CharactersService($http, $q) {
         var service = {

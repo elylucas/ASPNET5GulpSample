@@ -4,7 +4,7 @@
 
     angular
       .module('arkhamApp')
-      .controller('charactersController', ['charactersService', CharactersController]);
+      .controller('charactersController', CharactersController);
 
     function CharactersController(charactersService) {
         var vm = this;
