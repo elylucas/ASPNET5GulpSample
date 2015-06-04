@@ -10,4 +10,4 @@
 /// <reference path="app/characters/charactersController..js" />
 /// <reference path="lib/lib.min.js" />
 /// <reference path="app/app.all.min.js" />
-/// <reference path="lib/jquery/jquery-migrate.js" />
+/// <reference path="lib/jquery/jquery-migrate.min.js" />
