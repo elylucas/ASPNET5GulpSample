@@ -1,6 +1,5 @@
 ﻿/// <autosync enabled="true" />
 /// <reference path="lib/jquery/jquery.js" />
-/// <reference path="lib/bootstrap/js/bootstrap.js" />
 /// <reference path="lib/angular/angular.js" />
 /// <reference path="lib/angular/angular-ui-router.js" />
 /// <reference path="app/home/homecontroller.js" />
