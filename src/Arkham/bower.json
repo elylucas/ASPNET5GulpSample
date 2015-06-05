@@ -1,0 +1,11 @@
+{
+  "name": "Arkham.wwwroot",
+  "private": true,
+  "dependencies": {
+    "angular": "1.4.0",
+    "angular-animate": "1.4.0",
+    "angular-ui-router": "0.2.15",
+    "bootstrap": "3.3.4",
+    "jQuery": "2.1.4"
+  }
+}

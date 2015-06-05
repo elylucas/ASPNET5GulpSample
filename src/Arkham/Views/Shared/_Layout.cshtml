@@ -1,15 +1,28 @@
 ﻿@inject IOptions<AppSettings> AppSettings
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>@ViewBag.Title - @AppSettings.Options.SiteTitle</title>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title - @AppSettings.Options.SiteTitle</title>
 
+
+    <environment names="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment names="Production">
+        <link rel="stylesheet" href="~/assets/lib.min.css" />
+    </environment>
 
-    </head>
+    <environment names="Development">
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+
+    <environment names="Production">
+        <link rel="stylesheet" href="~/assets/app.min.css" />
+    </environment>
+
+</head>
 <body ng-app="arkhamApp">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
@@ -40,17 +53,27 @@
         </footer>
     </div>
 
-    <script src="~/lib/jquery/jquery.js"></script>
-    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
-    <script src="~/lib/angular/angular.js"></script>
-    <script src="~/lib/angular/angular-animate.js"></script>
-    <script src="~/lib/angular/angular-ui-router.js"></script>
+    <environment names="Development">
+        <script src="~/lib/jquery/jquery.js"></script>
+        <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+        <script src="~/lib/angular/angular.js"></script>
+        <script src="~/lib/angular/angular-animate.js"></script>
+        <script src="~/lib/angular/angular-ui-router.js"></script>
+    </environment>
+    <environment names="Production">
+        <script src="~/assets/lib.min.js"></script>
+    </environment>
 
-    <script src="~/app/app.module.js"></script>
-    <script src="~/app/home/homeController.js"></script>
-    <script src="~/app/characters/charactersController..js"></script>
-    <script src="~/app/characters/characterDetailController.js"></script>
-    <script src="~/app/characters/charactersService.js"></script>
+    <environment names="Development">
+        <script src="~/app/app.module.js"></script>
+        <script src="~/app/home/homeController.js"></script>
+        <script src="~/app/characters/charactersController..js"></script>
+        <script src="~/app/characters/characterDetailController.js"></script>
+        <script src="~/app/characters/charactersService.js"></script>
+    </environment>
+    <environment names="Production">
+        <script src="~/assets/app.min.js"></script>
+    </environment>
 
     @RenderSection("scripts", required: false)
 
