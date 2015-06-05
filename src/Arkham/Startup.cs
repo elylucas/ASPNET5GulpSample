@@ -62,7 +62,7 @@ namespace Arkham
 
             services.AddScoped<IJsonDb<List<Character>>>(provider =>
             {
-                var jsonPath = _env.MapPath(@"~\db\characters.json").Replace("~", "");
+                var jsonPath = _env.MapPath(@"~/db/characters.json").Replace("~", "");
                 return new JsonDb<List<Character>>(jsonPath);
             });
       
